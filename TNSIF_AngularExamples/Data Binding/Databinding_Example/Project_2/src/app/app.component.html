@@ -1,0 +1,49 @@
+
+
+<!-- Interpolation -->
+
+<h1>College Name: {{name}}</h1>
+
+
+
+<!-- Two Way Binding -->
+
+<input [(ngModel)] = "location" placeholder="Enter the location">
+<h2>Location: {{location}}</h2>
+
+
+<!-- Prperty Data Binding -->
+
+<img [src]="imgUrl" alt="Flower">
+
+
+
+<!-- Event Binding -->
+
+
+<h2>Message is {{message}}</h2>
+
+<button (click)="onClick()">Click Me</button>
+
+
+<div *ngIf="isvisible">
+<h2>Toggling the button</h2>
+
+</div>
+
+
+<br><br>
+
+<button (click)="toggleButton()">Toggle Button</button>
+
+
+<ol>
+  <li *ngFor="let courses of course">
+
+
+    {{courses}}
+
+  </li>
+
+
+</ol>
